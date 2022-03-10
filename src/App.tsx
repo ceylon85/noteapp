@@ -3,6 +3,7 @@ import './App.css';
 import { Note } from './models/note.model';
 import Header from './components/Header';
 import NoteList from './components/NoteList';
+import CreateNotes from './components/CreateNotes';
 import { Container, Row, Col } from 'react-bootstrap';
 
 function App() {
@@ -21,6 +22,11 @@ function App() {
         <Row>
           <Col>
             <NoteList notes={notes} setNotes={setNotes} />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <CreateNotes notes={notes} setNotes={setNotes} />
           </Col>
         </Row>
       </Container>
