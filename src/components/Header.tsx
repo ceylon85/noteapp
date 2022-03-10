@@ -3,7 +3,7 @@ import { Container, Navbar } from 'react-bootstrap'
 interface IHeaderProps {
 }
 
-const Header: React.FunctionComponent<IHeaderProps> = (props) => {
+const Header: React.FC<IHeaderProps> = (props) => {
     return (
         <Navbar fixed="top" bg="dark" variant="dark">
             <Container>

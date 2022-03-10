@@ -1,11 +1,14 @@
-import React from 'react'
+import * as React from 'react';
 
-type Props = {}
-
-function CreateNotes({}: Props) {
-  return (
-    <div>CreateNotes</div>
-  )
+interface ICreateNotesProps {
 }
 
-export default CreateNotes
+const CreateNotes: React.FunctionComponent<ICreateNotesProps> = (props) => {
+  return(
+      <>
+      <h2>Create Notes</h2>
+      </>
+  ) ;
+};
+
+export default CreateNotes;
